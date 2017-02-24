@@ -27,9 +27,13 @@
 <div class="mobile">
   <ul>
     <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#footer">About</a></li>
     <li class="nav-item"><a href="#">Contact</a></li>
   </ul>
+
+</div>
+
+<div class="footer" id="footer">
 
 </div>
 
@@ -66,6 +70,11 @@
     $( ".mobile" ).slideToggle( 600, function() {
       // Animation complete.
     });
+    $(".nav-item").click(function() {
+
+    $(".mobile").slideUp('slow');
+    $(".c-hamburger").removeClass("is-active");
+});
   });
 
   </script>

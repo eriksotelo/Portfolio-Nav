@@ -75,6 +75,7 @@ nav {
 }
 
 .nav-item a {
+  display: block;
   text-decoration: none;
   font-family: sans-serif;
   color: #fff;
